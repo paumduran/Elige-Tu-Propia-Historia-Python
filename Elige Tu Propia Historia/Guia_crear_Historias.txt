@@ -1,0 +1,73 @@
+La nueva historia debe colocarse en una carpeta, que contenga su nombre, dentro de la carpeta "Historias". La misma debe contener:
+
+	-Una carpeta con todas las imágenes,(tanto de los escenarios como de los actores).
+	-Una imagen de muestra que debe llamarse "muestra.png".
+	-Un archivo de texto llamado "puntuacion.txt" que contenga 0 en la primer y segunda línea.
+	-Un archivo de texto llamado "sinopsis.txt" que presente una breve descripción de la historia.
+	-Un archivo de texto con el nombre de la historia+.txt donde debe estar el guión.
+
+-----Dentro de la carpeta imágenes, las imágenes contenidas deben llamarse de la misma manera de la que son usadas en el guión.-----
+
+
+-----------------------------------GUIÓN-------------------------------
+
+El guión debe estar conformado por actores, escenas, decisiones, diálogos y acciones.
+
+* Los actores deben ser referenciados siempre por el mismo nombre.
+* Los diálogos son dichos por los actores con el siguiente formato:
+  ACTOR:DIÁLOGO
+* Las escenas sirven para cambiar el escenario, el formato que debe tener es el siguiente:
+  [NOMBRE_ESCENA,NOMBRE_IMAGEN] 
+* Las aciones deben tener el formato:
+  (ACTOR,ACCIÓN,PARÁMETROS) 
+        o
+  (ACTOR,ACCIÓN)
+* Las deciciones sirven para elegir cuál es el rumbo a tomar. El formato es:
+  {PREGUNTA:RESPUESTA1=OPCIÓN1;RESPUESTA2=OPCIÓN2}
+
+
+Las acciones que pueden realizar los actores son:
+
+- Posicionar: El actor aparece (se posiciona, sin animación) en la posición x, y.
+  (actor,posicionar,x,y) 
+
+- Caminar: El actor se mueve a paso lento hasta la posición x, y.
+  (​actor,caminar​,x,y)
+
+- Correr: El actor se mueve a paso rápido hasta la posición x, y.
+  (actor,correr​,x,y) 
+
+- Saltar: El actor se mueve saltando hasta la posición x, y.
+  (actor,salto,x,y)
+
+- Volverse Loco: El actor gira sobre su eje 3 veces.
+  (actor,v​olverse_loco)
+
+- Reir: El actor emite el sonido de risa y sobre su imagen aparece un emoticón de risa.
+  (actor,reir​)
+
+- Seguir a: El actor se mueve hasta la posición del actor2.
+  (actor,seguir_a​,actor2)
+
+- Llorar: El actor emite el sonido de un llanto y sobre su imagen aparece un emoticón de tristeza/llanto.
+  (actor,llorar​)
+
+- Hablar en Infinitivo: Todos los siguientes diálogos del actor serán reemplazados por sólo los verbos en infinitivo.
+  (actor,hablar_infinitivo​)
+
+- Hablar Normal: Si el actor hablaba en infinitivo, sus siguientes diálogos volverán a la normalidad.
+  (actor,hablar_normal​)
+
+- Sonar: Deberá sonar el sonido o música indicado por el nombre de archivo.
+  (actor,sonar​,nombre_de_archivo_de_sonido)
+
+- Escalar Actor: La imagen del actor se escala al valor definido por el parametro. UTILIDAD: si la imagen definida por el usuario es demasiado grande o demasiado pequeña, permite redefinirla a un tamaño que se considere válido.
+  (actor,escalar_actor)
+
+- Empujar: El actor va rápidamente hasta la posición del actor2 y lo empuja.
+  (actor,empujar,actor2)
+
+-  Rodar Hacia: El actor se mueve rodando hasta la posición x,y.
+  (actor,rodar_hacia,x,y)
+
+

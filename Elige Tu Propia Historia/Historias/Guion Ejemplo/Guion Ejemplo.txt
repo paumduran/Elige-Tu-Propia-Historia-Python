@@ -1,0 +1,54 @@
+[escena1,fondo1.png]
+(RUBEN,posicionar,-50,100)
+(GUILLERMO,posicionar,50,100)
+RUBEN:¡Hey!
+GUILLERMO:Mira, no te pierdas esto.
+(RUBEN,posicionar,0,100)
+(GUILLERMO,volverse_loco)
+GUILLERMO:¿Has visto? Reacciona bien... ¡Ajá!
+RUBEN:Vale, pero como no me digas qué es...
+GUILLERMO:Un disolvente que estoy inventando. 
+GUILLERMO:¡Potentísimo! Si metes el dedo, en dos minutos adiós dedo.
+GUILLERMO:La fórmula lleva Coca-cola. Por cierto, 
+GUILLERMO:he tenido que sacarte un par de latas que tenías en la nevera.
+RUBEN:No importa. Interesante... 
+RUBEN:Bueno, voy a ver si me pongo a estudiar, 
+RUBEN:que tengo el examen dentro de dos semanas 
+RUBEN:y todavía no me he mirado nada.
+(GUILLERMO,volverse_loco)
+GUILLERMO: Ponte, ponte, no sea que te cateen. 
+GUILLERMO:Oye, mañana vendrá a comer un primo mío 
+GUILLERMO:que ha empezado a trabajar aquí al lado. 
+GUILLERMO:Hace tiempo que no le veo. Estarás, ¿no? 
+GUILLERMO:Nos podías hacer esos espaguetis que te salen tan bien.
+RUBEN: Sí, claro, y luego os friego los platos, ¿no? 
+RUBEN:¡Qué morro!
+(RUBEN,caminar,30,100)
+(RUBEN,reir)
+{¿Ruben les hace los spaguetti?:Si=Escena2;No=Escena3}
+[Escena2,fondo2.png]
+(RUBEN,posicionar,-50,100)
+(GUILLERMO,posicionar,50,100)
+Escena:RUBEN está cocinando espaguetis. 
+Escena:Toma uno y lo prueba para ver si está al dente. 
+Escena:Suena el TIMBRE DE LA PUERTA.
+RUBEN:¡Guillermo! ¡Será tu primo!
+(RUBEN,salto,30,100)
+RUBEN:¡Guillermo!
+(RUBEN, salto,60,100)
+Escena:Nadie responde.
+Escena:Rubén deja el cucharón y se dirige al pasillo.
+RUBEN:¡Ya voy!
+[Escena3,fondo2.png]
+Escena:Guillermo está cocinando espaguetis. 
+Escena:Toma uno y lo prueba para ver si está al dente. 
+Escena:Suena el TIMBRE DE LA PUERTA.
+(RUBEN,posicionar,-50,100)
+(GUILLERMO,posicionar,50,100)
+GUILLERMO:¡RUBEN! ¡Será mi primo!
+(GUILLERMO,salto,-20,100)
+GUILLERMO:¡Ruben!
+(GUILLERMO,salto,60,100)
+Escena:Nadie responde. 
+Escena:GUILLERMO deja el cucharón y se dirige al pasillo.
+RUBEN:¡Ya voy!

@@ -1,0 +1,1 @@
+[["e", ["Escena2", "fondo2.jpg"]], ["d", ["actor1", " Bien\n"]], ["a", ["auto", "correr", ["100", "150"]]], ["d", ["actor2", " Cuidado!\n"]], ["d", ["actor1", " Casi me pisa ese auto.\n"]], ["d", ["actor2", " Zafaste\n"]]]

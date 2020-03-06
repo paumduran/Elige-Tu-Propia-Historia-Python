@@ -1,0 +1,42 @@
+[Escena1,fondo1.jpg]
+actor1: Hay alguien aca?
+(actor1,caminar,200,0)
+actor2: Si!! Estaba buscandote!
+(actor1,reir)
+actor1: Podemos correr hasta el otro lado!
+actor1: O prefieres ir saltando?
+{Que quieres que hagan los actores:correr=Escena2;saltar=Escena3}
+[Escena2,fondo2.jpg]
+(actor1,caminar,200,50)
+actor2: Prefiero correr
+(actor2,posicionar,200,-50)
+actor1: Vamos!
+(actor1,correr,-300,50)
+(actor2,correr,-300,-50)
+actor2: Estuvo divertido!
+(actor1,volverse_loco)
+(actor1,hablar_infinitivo)
+actor1: yo saltaba, yo caminaba, yo jugaba cuando tu estudiabas
+actor2: porque hablas en infinitivo?
+actor1: porque es divertido!!
+actor2: habla normal por favor!
+(actor2,empujar,actor1)
+(actor1,llorar)
+actor2: solo queria jugar..
+(actor1,hablar_normal)
+actor1: bueno.. vamos a jugar a casa a la play mejor
+[Escena3,fondo2.jpg]
+actor2: saltemos!!
+actor1: bueno
+(actor1,posicionar,300,200)
+(actor2,posicionar,300,-200)
+(actor2,salto,-300,50)
+(actor1,salto,-300,-50)
+actor1: que divertido!!
+actor2: rodemos!!
+(actor1,rodar_hacia,300,200)
+(actor2,rodar_hacia,100,200)
+(actor2,escalar_actor,0.2)
+actor1: te achicaste!
+actor2: que lindo dia!
+(actor1,seguir_a,actor2)

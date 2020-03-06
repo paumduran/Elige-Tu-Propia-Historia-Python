@@ -1,0 +1,9 @@
+Para utilizar el programa se pide que se tenga instalado el módulo IMAGE de Python
+Puede llamarse Image o PIL
+
+También se debe tener el módulo Pattern.es instalado en Python
+
+Tener instalado pilasengine última versión.
+
+Compatibilidad: Linux
+(pattern no funciona en pilas en windows)

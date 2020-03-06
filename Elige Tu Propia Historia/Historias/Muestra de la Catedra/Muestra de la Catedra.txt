@@ -1,0 +1,17 @@
+[Escena1,fondo1.jpg]
+actor1: Hola
+(actor1,caminar,100,150)
+actor2: Como andas?
+auto: Broom! Broom!
+{Que debe hacer el actor1?:responder=Escena2;no responder=Escena3}
+[Escena2,fondo2.jpg]
+actor1: Bien
+(auto,correr,100,150)
+actor2: Cuidado!
+actor1: Casi me pisa ese auto.
+actor2: Zafaste
+[Escena3,fondo3.jpg]
+(actor1,correr,200,150)
+(auto,correr,100,150)
+actor2: Que rapido que pasan los autos
+actor1: Esta complicado
